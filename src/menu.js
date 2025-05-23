@@ -9,20 +9,20 @@ function createMenuPage() {
     itemContainer.classList.add('item-container');
 
     const items = [
-        {'Name': 'Burger', 'shortForm': 'Bgr', 'Price': '$4.99', 'img': './assets/burger.jpeg'},
-        {'Name': 'Burrito', 'shortForm': 'Brr', 'Price': '$6.99', 'img': './assets/burrito.jpeg'},
-        {'Name': 'Donut', 'shortForm': 'Dnt', 'Price': '$1.99', 'img': './assets/donut.jpeg'},
-        {'Name': 'Hotdog', 'shortForm': 'Hdg', 'Price': '$3.99', 'img': './assets/hotdog.jpeg'},
-        {'Name': 'Leg Piece', 'shortForm': 'Lgp', 'Price': '$0.99', 'img': './assets/legpiece.jpeg'},
-        {'Name': 'Loaded Fries', 'shortForm': 'LFr', 'Price': '$5.99', 'img': './assets/loadedfries.jpeg'},
-        {'Name': 'Salad Bowl', 'shortForm': 'SBw', 'Price': '$2.99', 'img': './assets/saladbowl.jpeg'},
-        {'Name': 'Sandwich', 'shortForm': 'Snd', 'Price': '$3.99', 'img': './assets/sandwich.jpeg'},
-        {'Name': 'Taco', 'shortForm': 'Tco', 'Price': '$8.99', 'img': './assets/taco.jpeg'},
+        {'Name': 'Burger', 'Price': '$4.99', 'img': './assets/burger.jpeg'},
+        {'Name': 'Burrito', 'Price': '$6.99', 'img': './assets/burrito.jpeg'},
+        {'Name': 'Donut', 'Price': '$1.99', 'img': './assets/donut.jpeg'},
+        {'Name': 'Hotdog', 'Price': '$3.99', 'img': './assets/hotdog.jpeg'},
+        {'Name': 'Leg Piece', 'Price': '$0.99', 'img': './assets/legpiece.jpeg'},
+        {'Name': 'Loaded Fries', 'Price': '$5.99', 'img': './assets/loadedfries.jpeg'},
+        {'Name': 'Salad Bowl', 'Price': '$2.99', 'img': './assets/saladbowl.jpeg'},
+        {'Name': 'Sandwich', 'Price': '$3.99', 'img': './assets/sandwich.jpeg'},
+        {'Name': 'Taco', 'Price': '$8.99', 'img': './assets/taco.jpeg'},
     ]
 
     items.forEach((item) => {
         const itemElement = document.createElement('div');
-        itemElement.classList.add(item.shortForm);
+        itemElement.classList.add('itemCard');
 
         const itemName = document.createElement('h2');
         itemName.classList.add('itemName');
