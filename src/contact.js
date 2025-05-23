@@ -3,6 +3,7 @@ function createContactPage() {
     content.innerHTML = "";
 
     const heading = document.createElement('h1');
+    heading.classList.add('heading');
     heading.textContent = 'Contact Us';
 
     const contactContainer = document.createElement('div');

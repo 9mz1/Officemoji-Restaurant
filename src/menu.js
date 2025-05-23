@@ -3,6 +3,7 @@ function createMenuPage() {
     content.innerHTML = "";
 
     const heading = document.createElement('h1');
+    heading.classList.add('heading');
     heading.textContent = 'Menu';
 
     const itemContainer = document.createElement('div');
@@ -22,25 +23,29 @@ function createMenuPage() {
 
     items.forEach((item) => {
         const itemElement = document.createElement('div');
-        itemElement.classList.add('itemCard');
+        itemElement.classList.add('item-card');
+
+        const textContainer = document.createElement("div");
+        textContainer.classList.add('text-container');
 
         const itemName = document.createElement('h2');
-        itemName.classList.add('itemName');
+        itemName.classList.add('item-name');
         itemName.textContent = item.Name
 
         const itemPrice = document.createElement('p');
-        itemPrice.classList.add('itemPrice');
+        itemPrice.classList.add('item-price');
         itemPrice.textContent = item.Price;
 
         const itemIMG = document.createElement('img');
-        itemIMG.classList.add('itemIMG');
+        itemIMG.classList.add('item-IMG');
         itemIMG.src = item.img;
-        itemIMG.height = '150';
+        itemIMG.height = '200';
         // itemIMG.width = '400'
 
+        textContainer.appendChild(itemName);
+        textContainer.appendChild(itemPrice);
         itemElement.appendChild(itemIMG);
-        itemElement.appendChild(itemName);
-        itemElement.appendChild(itemPrice);
+        itemElement.appendChild(textContainer);
         itemContainer.appendChild(itemElement);
     });
 
