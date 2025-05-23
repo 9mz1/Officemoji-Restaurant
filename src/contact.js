@@ -21,13 +21,13 @@ function createContactPage() {
     numberInfo.classList.add('info');
 
     const addressInfo = document.createElement('p');
-    addressInfo.textContent = '21 st, laugh corner, emoji-world';
+    addressInfo.textContent = '21 street, laugh corner, emoji-world';
     addressInfo.classList.add('info');
 
 
     contactContainer.appendChild(chefIMG);
-    contactContainer.appendChild(numberInfo);
     contactContainer.appendChild(emailInfo);
+    contactContainer.appendChild(numberInfo);
     contactContainer.appendChild(addressInfo);
 
     content.appendChild(heading);
