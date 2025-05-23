@@ -4,6 +4,9 @@ function createHomePage() {
     const content = document.querySelector("#content");
     content.innerHTML = "";
 
+    const container = document.createElement('div');
+    container.classList.add('container');
+
     const intro = document.createElement('p');
     intro.textContent = 'The Best Restaurant In The Emoji-World';
 
@@ -14,8 +17,9 @@ function createHomePage() {
         createMenuPage();
     })
 
-    content.appendChild(intro);
-    content.appendChild(button);
+    container.appendChild(intro);
+    container.appendChild(button);
+    content.appendChild(container);
 }
 
 export default createHomePage;
