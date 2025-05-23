@@ -1,3 +1,5 @@
+import createMenuPage from "./menu";
+
 function createHomePage() {
     const content = document.querySelector("#content");
     content.innerHTML = "";
@@ -7,6 +9,10 @@ function createHomePage() {
 
     const button = document.createElement('button');
     button.textContent = 'Order Now';
+
+    button.addEventListener('click', () => {
+        createMenuPage();
+    })
 
     content.appendChild(intro);
     content.appendChild(button);

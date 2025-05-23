@@ -1,11 +1,11 @@
 import createHomePage from "./home";
 import createMenuPage from "./menu";
-// import createAboutPage from "./about";
+import createContactPage from "./contact";
 
 function createTabs() {
     const nav = document.querySelector('nav');
 
-    const buttons = ['home', 'menu', 'about'];
+    const buttons = ['home', 'menu', 'contact'];
     buttons.forEach((button) => {
         const buttonElement = document.createElement('button');
         buttonElement.textContent = button;
@@ -15,7 +15,7 @@ function createTabs() {
 
     const home = document.querySelector('.home');
     const menu = document.querySelector('.menu');
-    const about = document.querySelector('.about');
+    const contact = document.querySelector('.contact');
 
     home.addEventListener('click', () => {
         createHomePage();
@@ -25,8 +25,8 @@ function createTabs() {
         createMenuPage();
     });
 
-    about.addEventListener('click', () => {
-        createAboutPage();
+    contact.addEventListener('click', () => {
+        createContactPage();
     });
 }
 
