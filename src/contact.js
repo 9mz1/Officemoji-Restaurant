@@ -16,7 +16,7 @@ function createContactPage() {
     sticker.classList.add('sticker');
 
     const chefIMG = document.createElement('img');
-    chefIMG.src = '/assets/chefMoji.jpeg';
+    chefIMG.src = './assets/chefMoji.jpeg';
     chefIMG.height = '300';
 
     const rightContainer = document.createElement('div');

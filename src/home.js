@@ -11,7 +11,7 @@ function createHomePage() {
     intro.textContent = 'The Best Restaurant In The Emoji-World';
 
     const sticker = document.createElement('img');
-    sticker.src = '/.assets/sticker.png';
+    sticker.src = './assets/sticker.png';
     sticker.classList.add('sticker');
 
     const exclamationMark = document.createElement('img');
