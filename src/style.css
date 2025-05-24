@@ -16,7 +16,9 @@
 
 body {
     min-height: 100vh;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fillustration%2Femoji-pattern.html&psig=AOvVaw2qfs91xA0kuFcPeQOdhFno&ust=1748175564714000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPC3jM6LvI0DFQAAAAAdAAAAABAE');
+
 }
 
 header {
@@ -93,11 +95,45 @@ header nav > .nav-buttons:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     cursor: pointer;
     transition: 0.3s ease-in-out all;
+    z-index: 3;
 }
 .container > button:hover {
     background-color: var(--tertiary-color);
     color: var(--primary-color);
     border-color: var(--secondary-color);
+}
+
+.sticker, .exclamation-mark {
+    position: fixed;
+    transition: 0.3s ease-in-out all;
+}
+
+.sticker {
+    height: 250px;
+    left: 140px;
+    bottom: 140px;
+}
+
+.pos {
+    left: auto;
+    bottom: auto;
+    top: 125px;
+    right: 200px;
+    z-index: 3;
+}
+.sticker:hover {
+    rotate: 360deg;
+}
+
+.exclamation-mark {
+    height: 200px;
+    right: 70px;
+    top: 210px;
+    rotate: 12deg;
+}
+
+.exclamation-mark:hover {
+    rotate: 20deg;
 }
 
 .heading {
@@ -149,4 +185,34 @@ header nav > .nav-buttons:hover {
 .item-container .item-card .text-container > .item-price {
     font-size: 1.15rem;
     font-weight: 800;
+}
+
+.contact-container {
+    margin-top: 22px;
+    height: 450px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 20px;
+    /* border: 2px solid blue; */
+    border-radius: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.contact-container > img {
+    border-radius: 40px;
+}
+
+.contact-container > .right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.contact-container > .right-container > .info {
+    font-size: 1.15rem;
+    font-weight: 600;
 }
