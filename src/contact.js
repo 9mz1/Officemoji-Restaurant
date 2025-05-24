@@ -7,11 +7,20 @@ function createContactPage() {
     heading.textContent = 'Contact Us';
 
     const contactContainer = document.createElement('div');
-    contactContainer.classList.add('contactContainer');
+    contactContainer.classList.add('contact-container');
+
+    
+    const sticker = document.createElement('img');
+    sticker.src = '/assets/sticker.png';
+    sticker.classList.add('pos')
+    sticker.classList.add('sticker');
 
     const chefIMG = document.createElement('img');
     chefIMG.src = '/assets/chefMoji.jpeg';
-    chefIMG.height = '200';
+    chefIMG.height = '300';
+
+    const rightContainer = document.createElement('div');
+    rightContainer.classList.add('right-container');
 
     const emailInfo = document.createElement('p');
     emailInfo.textContent = 'officemojirestaurant@gmail.com';
@@ -26,13 +35,15 @@ function createContactPage() {
     addressInfo.classList.add('info');
 
 
+    rightContainer.appendChild(emailInfo);
+    rightContainer.appendChild(numberInfo);
+    rightContainer.appendChild(addressInfo);
     contactContainer.appendChild(chefIMG);
-    contactContainer.appendChild(emailInfo);
-    contactContainer.appendChild(numberInfo);
-    contactContainer.appendChild(addressInfo);
+    contactContainer.appendChild(rightContainer);
 
     content.appendChild(heading);
     content.appendChild(contactContainer);
+    content.appendChild(sticker);
 }
 
 export default createContactPage;
