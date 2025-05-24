@@ -11,7 +11,7 @@ function createContactPage() {
 
     
     const sticker = document.createElement('img');
-    sticker.src = '/assets/sticker.png';
+    sticker.src = './assets/sticker.png';
     sticker.classList.add('pos')
     sticker.classList.add('sticker');
 
